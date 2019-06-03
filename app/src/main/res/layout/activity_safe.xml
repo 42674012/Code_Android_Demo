@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="账号与安全"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/pw_modify"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="修改密码"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:paddingLeft="16dp"
+            android:textColor="#333333"
+            />
+        <FrameLayout
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@mipmap/arrow_right"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:text="开启手势密码:"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:paddingLeft="16dp"
+            />
+        <FrameLayout
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="12dp"
+            >
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_gesture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textOff="关"
+                android:textOn="开"
+                app:switchTextAppearance="@style/ontextoff"
+                app:showText="true"
+                app:theme="@style/scstyle"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_marginBottom="16dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/ischosen"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/img_msg_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/radiobox"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:maxLines="2"
+            />
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:gravity="center|left"
+                android:textColor="#999"
+                />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:textColor="#999"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

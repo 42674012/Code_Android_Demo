@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/img_msg_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="top|left"
+            android:maxLines="2"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center|left"
+            android:paddingLeft="8dp"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingRight="12dp"
+            android:textColor="#808080"
+            android:textSize="13sp"
+            android:layout_gravity="center|right"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="bottom"
+            />
+    </FrameLayout>
+
+</LinearLayout>

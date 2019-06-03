@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.gog.conmentmanage">
+    <permission
+        android:name="cn.gog.conmentmanage.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".GogApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.activity.DutyNoticeListActivity" />
+        <activity android:name=".ui.activity.PersonInfoActivity" />
+        <activity android:name=".ui.activity.ContactActivity" />
+        <activity android:name=".ui.activity.SafeActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.SearchTaskActivity" />
+        <activity android:name=".ui.activity.SearchArticleActivity" />
+        <activity android:name=".ui.activity.AboutActivity" />
+        <activity android:name=".ui.activity.ContactDetailActivity" />
+        <activity android:name=".ui.activity.DutyDetailActivity" />
+        <activity android:name=".ui.activity.WritingDetailActivity" />
+        <activity android:name=".ui.activity.SearchActivity" />
+        <activity
+            android:name=".ui.activity.AddDutyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.activity.AddWritingActivity" />
+        <activity android:name=".ui.activity.DutyDetailRequestActivity" />
+        <activity android:name=".ui.activity.DutyDetailRequestAddActivity" />
+        <activity android:name=".ui.activity.DutyDetailRequestAddEditActivity" />
+        <activity android:name=".ui.activity.AddRequestOrgActivity" />
+        <activity android:name=".ui.activity.XiaFaActivity" />
+        <activity android:name=".ui.activity.WritingListActivity" />
+        <activity android:name=".ui.activity.TaskListActivity" />
+        <activity android:name=".ui.activity.EditDutyActivity" />
+        <activity android:name=".ui.activity.ArticleInfoListActivity" />
+        <activity android:name=".ui.activity.SystemInfoActivity" />
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Night" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Night" />
+
+        <activity
+            android:name="cn.gog.conmentmanage.utils.gesture.activity.CreateGestureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.gog.conmentmanage.utils.gesture.activity.GestureLoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.gog.conmentmanage" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.PwModifyActivity" />
+
+
+        <receiver
+            android:name=".receiver.JpushReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="cn.gog.conmentmanage" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            tools:node="replace">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="cn.gog.conmentmanage" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="cn.gog.conmentmanage" />
+            </intent-filter>
+        </service>
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="true"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="cn.gog.conmentmanage" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

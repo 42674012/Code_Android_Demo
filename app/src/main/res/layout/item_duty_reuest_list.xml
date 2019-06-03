@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:background="@color/white"
+    android:layout_margin="6dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:id="@+id/ischosen"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+         android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/img_msg_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@mipmap/radiobox"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_org"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="多彩贵州网"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:paddingTop="6dp"
+                android:paddingLeft="8dp"
+                android:paddingBottom="6dp"
+                />
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:text="删除"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="http://www.baidu.com"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:paddingTop="6dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="6dp"
+            />
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:maxLines="2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="不限"
+                android:paddingLeft="8dp"
+                android:gravity="center|left"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:paddingRight="8dp"
+                android:text="创建时间：2018:-55-22 22：22 "
+                android:maxLines="1"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

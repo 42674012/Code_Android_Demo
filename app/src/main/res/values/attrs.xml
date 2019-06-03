@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorTrackTabViewIndicator">
+        <attr name="ctTabSelectedTextColor" format="color" />
+        <attr name="ctTabIndicatorColor" format="color" />
+        <attr name="ctTabTextColor" format="color" />
+        <attr name="ctTabTextSize" format="dimension" />
+        <attr name="ctTabTextOriginSize" format="dimension" />
+        <attr name="ctTabTextChangeSize" format="dimension" />
+        <attr name="ctTabWidth" format="dimension" />
+        <attr name="ctMode">
+            <enum name="scrollable" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctvText" format="string" />
+        <attr name="ctvText_size" format="dimension" />
+        <attr name="ctvText_origin_color" format="color" />
+        <attr name="ctvText_change_color" format="color" />
+        <attr name="ctvProgress" format="float" />
+        <attr name="ctvDirection" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PullZoomLayout">
+        <attr name="pzHeader" format="reference" />
+        <attr name="pzMain" format="reference" />
+    </declare-styleable>
+    <attr name="clickableBackground" format="reference" />
+    <attr name="main_bg" format="reference|color" />
+    <attr name="white_bg" format="reference|color" />
+    <attr name="font_color" format="reference|color" />
+    <attr name="font_color2" format="reference|color" />
+    <attr name="font_red" format="reference|color" />
+    <attr name="isColorUi" format="boolean" />
+    <attr name="divider_black" format="reference|color" />
+    <attr name="divider_light_grey" format="reference|color" />
+    <attr name="tab_bg" format="reference|color" />
+
+    <declare-styleable name="mySeekBar">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textBackground" format="reference" />
+        <attr name="textOrientation" format="enum">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AutoLinkTextView">
+        <!--链接点击后是否自动关闭当前Activity-->
+        <attr name="autoFinishCurrentActivity" format="boolean" />
+
+        <attr name="link" format="string" />
+        <attr name="autoRedirect" format="boolean" />
+    </declare-styleable>
+
+
+    <!--  自定义文字跟随SEEKBAR -->
+    <declare-styleable name="ZLSeekBar">
+        <attr name="textsize" format="dimension" />
+        <attr name="textcolor" format="color" />
+        <attr name="img" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="GifImageView">
+        <attr name="gif_src" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialSearchBar">
+        //Base
+        <attr name="mt_speechMode" format="boolean" />
+        <attr name="mt_maxSuggestionsCount" format="integer" />
+        <attr name="mt_navIconEnabled" format="boolean" />
+        <attr name="mt_roundedSearchBarEnabled" format="boolean" />
+        //(API 21+ , Will Revert To Default Shape On Lower
+        <attr name="mt_menuDividerEnabled" format="boolean" />
+        <attr name="mt_dividerColor" format="color" />
+        <attr name="mt_searchBarColor" format="color" />
+
+        //Icons
+        <attr name="mt_menuIconDrawable" format="reference" />
+        <attr name="mt_searchIconDrawable" format="reference" />
+        <attr name="mt_speechIconDrawable" format="reference" />
+        <attr name="mt_backIconDrawable" format="reference" />
+        <attr name="mt_clearIconDrawable" format="reference" />
+        <attr name="mt_navIconTint" format="color" />
+        <attr name="mt_menuIconTint" format="color" />
+        <attr name="mt_searchIconTint" format="color" />
+        <attr name="mt_backIconTint" format="color" />
+        <attr name="mt_clearIconTint" format="color" />
+        <attr name="mt_navIconUseTint" format="boolean" />
+        <attr name="mt_menuIconUseTint" format="boolean" />
+        <attr name="mt_searchIconUseTint" format="boolean" />
+        <attr name="mt_backIconUseTint" format="boolean" />
+        <attr name="mt_clearIconUseTint" format="boolean" />
+        <attr name="mt_borderlessRippleEnabled" format="boolean" />
+
+        //Text
+        <attr name="mt_hint" format="string" />
+        <attr name="mt_placeholder" format="string" />
+        <attr name="mt_textColor" format="color" />
+        <attr name="mt_hintColor" format="color" />
+        <attr name="mt_placeholderColor" format="color" />
+        <attr name="mt_textCursorTint" format="color" />
+        <attr name="mt_leftTextSelectorDrawable" format="reference" />
+        <attr name="mt_middleTextSelectorDrawable" format="reference" />
+        <attr name="mt_rightTextSelectorDrawable" format="reference" />
+        <attr name="mt_leftTextSelectorTint" format="color" />
+        <attr name="mt_middleTextSelectorTint" format="color" />
+        <attr name="mt_rightTextSelectorTint" format="color" />
+        <attr name="mt_handlesTintEnabled" format="boolean" />
+        <attr name="mt_highlightedTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+</resources>

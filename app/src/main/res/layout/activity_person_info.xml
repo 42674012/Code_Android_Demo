@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_grey"
+    >
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="个人信息"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.gog.conmentmanage.ui.view.MaskFrameLayout
+            android:id="@+id/mask_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="头    像:"
+            android:gravity="center|left"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_msg_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/me_sharp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_16"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/arrow_right"
+            />
+    </LinearLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="@color/divider"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="部    门:"
+            android:textColor="#999" />
+        <TextView
+            android:id="@+id/bumen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="所属部门:"
+            android:gravity="center|left"
+            android:textColor="#999"
+            />
+        <TextView
+            android:id="@+id/danwei"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="联系电话:"
+            android:gravity="center|left"
+            android:textColor="#999"
+            />
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="邮    箱:"
+            android:gravity="center|left"
+            android:textColor="#999"
+            />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#333"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

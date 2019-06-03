@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="61dp"
+    android:background="#77ffffff"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="61dp"
+        android:layout_height="61dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_msg_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/me_sharp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_12"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_msg_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:maxLines="2"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#4d4d4d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_msg_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:paddingLeft="8dp"
+                    android:textColor="#cccccc"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="1dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

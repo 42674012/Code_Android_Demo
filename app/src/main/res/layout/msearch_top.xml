@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <!--
+            编辑框控件
+            宽度匹配屏幕
+            高度适应文字
+            在编辑框左边画上搜索的那个图片
+            单行编辑框
+         -->
+
+
+        <EditText
+            android:id="@+id/et_searchtext_search"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search_baground_shap"
+            android:drawableLeft="@mipmap/search"
+            android:hint="@string/search_hint"
+             android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:textSize="12dp"
+            android:paddingLeft="5dp" />
+        <!--
+            图片控件
+            宽度高度都是适应图片大小
+            图片资源来自一个配置文件
+            对齐在编辑框的右边
+            默认不可见且不占用屏幕位置
+         -->
+        <ImageView
+            android:id="@+id/ib_searchtext_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/et_searchtext_search"
+            android:layout_alignRight="@+id/et_searchtext_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/explore_search_close"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/buttonback"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:gravity="right|center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+</LinearLayout>
+

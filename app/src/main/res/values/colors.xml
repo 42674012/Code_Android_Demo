@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="primary_disable">#7DBEFF</color>
+    <color name="bg_grey">#f5f5f9</color>
+    <color name="bg_main">#f9f9f9</color>
+    <color name="half_transparent">#7f000000</color>
+
+    <color name="common_font">#303742</color>
+    <color name="gray_font">#979a9f</color>
+
+    <color name="action_text_color_normal">#cfcfcf</color>
+    <color name="action_text_color_pressed">#353535</color>
+    <color name="action_text_color_enabled">#818585</color>
+
+    <color name="divider">#E6E6E6</color>
+    <color name="splite1">#E6E6E6</color>
+    <!--tab未选中时的颜色-->
+    <color name="search_bg">#EEEEEE</color>
+
+    <color name="action_comment_text">#fffafafa</color>
+    <color name="ssxinhongse1">#fff85959</color>
+    <color name="ssxinjiangexian1">#ffe8e8e8</color>
+    <color name="ssxinlanse1">#ff406599</color>
+    <color name="ssxinlanse2">#ff2a90d7</color>
+    <color name="ssxinmian16">@color/ssxinheise5</color>
+    <color name="ssxinmian16_press">@color/ssxinheise5_press</color>
+    <color name="ssxinmian3">@color/ssxinheihui6</color>
+    <color name="ssxinmian4">@color/ssxinbaise1</color>
+    <color name="ssxinmian4_press">@color/ssxinbaise1_press</color>
+    <color name="ssxinmian6">@color/ssxinheihui3</color>
+    <color name="ssxinmian7">@color/ssxinhongse1</color>
+    <color name="ssxinxian1">@color/ssxinjiangexian1</color>
+    <color name="ssxinxian7">@color/ssxinjiangexian2</color>
+    <color name="ssxinzi2">@color/ssxinheihui2</color>
+    <color name="ssxinzi3">@color/ssxinheihui3</color>
+    <color name="ssxinzi3_press">@color/ssxinheihui3_press</color>
+    <color name="ssxinzi5">@color/ssxinlanse1</color>
+    <color name="ssxinzi6">@color/ssxinlanse2</color>
+    <color name="ssxinzi7">@color/ssxinbaise4</color>
+    <color name="ssxinzi8">@color/ssxinbaise4</color>
+    <color name="ssxinzi9">@color/ssxinheihui8</color>
+    <color name="account_account_action_normal">#ffa40000</color>
+    <color name="black">#000000</color>
+    <color name="comment_dlg_text_hint">@color/ssxinzi9</color>
+    <color name="default_text">#979A9F</color>
+    <color name="default_window_bg">#ffffffff</color>
+    <color name="default_window_bg_night">#ff1a1b1d</color>
+    <color name="fengexian5">#ffe6e6e6</color>
+    <color name="gallery_background">#1D1D1E</color>
+    <color name="heise1">#ff464646</color>
+    <color name="red">#ffff0000</color>
+    <color name="ss_menu_text">#ff333333</color>
+    <color name="ssxinbaise1">#ffffffff</color>
+    <color name="ssxinbaise1_press">#fff0f0f0</color>
+    <color name="ssxinbaise4">#ffffffff</color>
+    <color name="eceaea">#eceaea</color>
+    <color name="ssxinheihui1">#ff222222</color>
+    <color name="ssxinheihui10_press">#7f979fac</color>
+    <color name="ssxinheihui2">#ff505050</color>
+    <color name="ssxinheihui3">#ff999999</color>
+    <color name="ssxinheihui3_press">#7f999999</color>
+    <color name="ssxinheihui6">#fff4f5f6</color>
+    <color name="ssxinheihui8">#ffcacaca</color>
+    <color name="ssxinheise5">#26000000</color>
+    <color name="ssxinheise5_press">#7f000000</color>
+    <color name="ssxinjiangexian2">#ffd8d8d8</color>
+    <color name="subscribe_category_bar_bg_night">#cc363636</color>
+    <color name="subscribe_category_btn_bg_normal">#ffd43d3d</color>
+    <color name="subscribe_category_btn_bg_pressed">#ffb11919</color>
+    <color name="subscribe_empty_view_hint_text_color">@color/ssxinzi3</color>
+    <color name="subscribe_text_color">@color/ssxinzi6</color>
+
+    <color name="write_comment_divider_color">@color/fengexian5</color>
+    <!--<color name="divider">#EAEAEA</color>-->
+    <color name="huise">#c2979797</color>
+
+    <!-- 多彩宝-->
+    <color name="ssxinyejianheise2_press">#ff1b1b1b</color>
+    <color name="colorLine">#ededee</color>
+    <color name="colorBg">#f3f5f7</color>
+
+    <color name="bg">#F0F0F0</color>
+    <color name="txt_color">#48495F</color>
+
+
+    <color name="searchBarIconColor">#3a3a3a</color>
+    //Base
+    <color name="searchBarPrimaryColor">#FFFFFF</color>
+    <color name="searchBarCursorColor">#8000a1ff</color>
+    <color name="searchBarDividerColor">#1F000000</color>
+
+    //Icons
+    <color name="searchBarNavIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarMenuIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarSearchIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarClearIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarBackIconTintColor">@color/searchBarIconColor</color>
+
+    //Text
+    <color name="searchBarTextColor">#DE000000</color>
+    <color name="searchBarHintColor">#42000000</color>
+    <color name="searchBarPlaceholderColor">#8A000000</color>
+    <color name="searchBarTextHighlightColor">#8000a1ff</color>
+    <color name="leftTextSelectorColor">#00a1ff</color>
+    <color name="middleTextSelectorColor">#00a1ff</color>
+    <color name="rightTextSelectorColor">#00a1ff</color>
+    <color name="search_edit_gray">#ffcccccc</color>
+    <color name="grey8">#888888</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="color_4e3d31">#4e3d31</color>
+
+    <!-- -->
+
+    <color name="speedTextNormal">#ffdddddd</color>
+    <color name="colorSpeedPanel">#99222222</color>
+
+
+    <color name="bg_btn">#5b8cff</color>
+    <color name="toolbar_start">#79c3e9</color>
+    <color name="toolbar_end">#5975ec</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="color_common_text">#82C6FE</color>
+    <color name="color_common_white">#ffffff</color>
+    <color name="blue_text">#3185fc</color>
+    <color name="line_color">#cdcdcd</color>
+
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+</resources>

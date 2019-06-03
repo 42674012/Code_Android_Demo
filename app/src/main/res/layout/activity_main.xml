@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/splite1"/>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlIconHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivIconHome"
+                style="@style/tab_image"
+                android:src="@drawable/b_newhome_tabbar_selector"/>
+
+            <TextView
+                android:id="@+id/tvTextHome"
+                style="@style/tab_text"
+                android:layout_below="@+id/ivIconHome"
+                android:text="首页"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ivIconVideo"
+                style="@style/tab_image"
+                android:src="@drawable/b_newvideo_tabbar_selector"/>
+
+            <TextView
+                android:id="@+id/tvTextVideo"
+                style="@style/tab_text"
+                android:layout_below="@+id/ivIconVideo"
+                android:text="待办"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+
+            <ImageView
+                android:id="@+id/ivIconAttention"
+                style="@style/tab_image"
+                android:src="@drawable/b_complain_tabbar_selector"/>
+
+            <TextView
+                style="@style/tab_text"
+                android:layout_below="@+id/ivIconAttention"
+                android:text="我的"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
